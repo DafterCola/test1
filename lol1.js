@@ -177,7 +177,7 @@ const dom = {
 		const targetNode = document.getElementsByClassName("logbox")[0];
 		const observer = new MutationObserver(obscallback);
 		function obscallback(mutations) {
-			if(mutations.some(mutation => mutation.target.className != undefined && mutation.target.className == "videobtn")) {
+			if(mutations.some(mutation => mutation.target.className != undefined && mutation.target.className == "unmonitoredvideobt")) {
 				interval.clear(cinterval);
 				observer.disconnect();
 			}
