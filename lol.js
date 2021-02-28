@@ -1,3 +1,4 @@
+//lol
 const ips = {
 	blacklist: [],
 	whitelist: [],
