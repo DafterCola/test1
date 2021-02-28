@@ -1,4 +1,3 @@
-//lol
 const ips = {
 	blacklist: [],
 	whitelist: [],
@@ -133,6 +132,52 @@ const time = {
 			});
 	}
 };
+
+const dclick = {
+	new_connection: function() {
+		const btn = document.getElementsByClassName("disconnectbtn")[0];
+		switch (btn.innerText.split("\n")[0]) {
+			case "Stop":
+				btn.click();
+				btn.click();
+				btn.click();
+			break;
+	
+			case "Really?":
+				btn.click();
+				btn.click();
+			break;
+			
+			default:
+				btn.click();
+			break;
+		}
+	},
+	reroll_skip: function() {
+		dclick.discconect();
+		dclick.stop_reroll();
+	},
+	discconect: function() {
+		const btn = document.getElementsByClassName("disconnectbtn")[0];
+		switch (btn.innerText.split("\n")[0]) {
+			case "Stop":
+				btn.click();
+				btn.click();
+			break;
+	
+			case "Really?":
+				btn.click();
+			break;
+			
+			default:
+			break;
+		}
+	},
+	stop_reroll: function () {
+		const btn =  document.querySelector('input[value="Stop"]');
+		btn.click();
+	}
+}; 
 
 const list = {
 	blacklist: function () {
