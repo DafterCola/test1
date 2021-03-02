@@ -16,6 +16,13 @@ function init_chat() {
 	<button type="button" onclick="local.save()">Save to local storage</button>
 	<button type="button" onclick="local.clear()">Clear local storage</button>`;
 }
+const reg = /\("Omegle video chat might not work well in Microsoft Edge\. Please upgrade to Firefox or Chrome\."\)/g //poistin nämä >
+const string = `("Omegle video chat might not work well in Microsoft Edge. Please upgrade to Firefox or Chrome."),init_chat()`;
+let chat = startNewChat.toString();
+chat = chat.substring(35);
+chat = chat.substring(0, chat.length - 1);
+chat = chat.replace(reg, string);
+startNewChat = new Function (["a","b","c","e","f"], chat);
 const newItem = document.createElement("div");
 newItem.innerHTML = /* html */`
 	<div style="width: 400px;height: 20px;margin-top: 7px;margin-right: auto;margin-bottom: auto;margin-left: auto;"> 
