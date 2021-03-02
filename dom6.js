@@ -1,5 +1,5 @@
 function init_chat() {
-	document.getElementsByClassName("logitem")[0].innerHTML = /* html */`
+	document.getElementsById("abovevideosexybtn")[0].innerHTML = /* html */`
 	IP: Fetching <br/>
 	City: Fetching <br/>
 	Region: Fetching <br/>
