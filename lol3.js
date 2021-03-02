@@ -187,7 +187,22 @@ const list = {
 	},
 	blacklist_this: function() {
 		ips.blacklist.push(ips.history[ips.history.length - 1]);
-		dclick.discconect();
+		const btn = document.getElementsByClassName("disconnectbtn")[0];
+		switch (btn.innerText.split("\n")[0]) {
+			case "Stop":
+				btn.click();
+				btn.click();
+				btn.click();
+			break;
+	
+			case "Really?":
+				btn.click();
+				btn.click();
+			break;
+			
+			default:
+				btn.click();
+			break;
 	},
 	whitelist: function () {
 		const x = $("texbox_ip");
