@@ -196,6 +196,7 @@ const list = {
 	},
 	whitelist_this: function () {
 		ips.whitelist.push(ips.history[ips.history.length - 1]);
+		dclick.discconect();
 	}
 };
 
