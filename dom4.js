@@ -61,4 +61,5 @@ $("header").appendChild(newItem);
 $("onlinecount").style.position = "absolute";
 $("onlinecount").style.bottom = "18px";
 $('sharebuttons').dispose();
+$('tagline').dispose();
 
