@@ -60,17 +60,17 @@ async function fetch_api(ip) {
 		timezone: time_data.utc_offset,
 		timezone_short: time_data.abbreviation
 		
-		function() { 
-		if (country == "India")  {
-				dclick.discconect();
-				dclick.stop_reroll();
-			};
-		
 		
 			
 	};
 	return data;
 }
+
+function(skip inssss) { 
+		if (country == "India")  {
+				dclick.discconect();
+				dclick.stop_reroll();
+			};
 
 const time = {
 	peers_time: function (newtime, ip) {
