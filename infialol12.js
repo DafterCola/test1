@@ -61,9 +61,6 @@ async function fetch_api(ip) {
 		timezone_short: time_data.abbreviation
 	};
 	return data;
-	if (country == "India") {
-		dclick.discconect();
-		dclick.stop_reroll();
 };
 
 const time = {
