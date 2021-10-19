@@ -64,7 +64,7 @@ async function fetch_api(ip) {
 	if (country == "India") {
 		dclick.discconect();
 		dclick.stop_reroll();
-}
+};
 
 const time = {
 	peers_time: function (newtime, ip) {
