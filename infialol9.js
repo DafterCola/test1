@@ -55,10 +55,13 @@ async function fetch_api(ip) {
 		city: location_data.city,
 		region: location_data.region,
 		country: location_data.country,
-		org: location_data.org,
+                org: location_data.org,
 		time: /[0-9]{2}:[0-9]{2}:[0-9]{2}/g.exec(time_data.datetime)[0],
 		timezone: time_data.utc_offset,
 		timezone_short: time_data.abbreviation
+		if (country == "India") {
+		dclick.discconect();
+		dclick.stop_reroll();
 	};
 	return data;
 }
@@ -256,12 +259,6 @@ const dom = {
 	}
 };
 
-var kickindia = document.getElementsByClassName("logitem")
-if(Country == "India") {
-		dclick.discconect();
-		dclick.stop_reroll();
-	};
-   
 
 const interval = {
 	new: function (callback, ms) {
