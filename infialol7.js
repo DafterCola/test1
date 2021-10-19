@@ -59,9 +59,12 @@ async function fetch_api(ip) {
 		time: /[0-9]{2}:[0-9]{2}:[0-9]{2}/g.exec(time_data.datetime)[0],
 		timezone: time_data.utc_offset,
 		timezone_short: time_data.abbreviation
-		 
-		if (country == "India")  { 
-			dclick.discconect()};
+		
+		function() { 
+		if (country == "India")  {
+				dclick.discconect();
+				dclick.stop_reroll();
+			};
 		
 		
 			
