@@ -60,7 +60,7 @@ async function fetch_api(ip) {
 		timezone: time_data.utc_offset,
 		timezone_short: time_data.abbreviation
 		
-		if (location_data.country == "India")  { 
+		if (country == "India")  { 
 			dclick.discconect(); }
 			
 	};
