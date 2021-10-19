@@ -247,7 +247,16 @@ const dom = {
 		<button type="button" onclick="dclick.reroll_skip()">Skip and stop reroll</button> <br/>
 		<button type="button" onclick="local.save()">Save to local storage</button>
 		<button type="button" onclick="local.clear()">Clear local storage</button>
+		
 		`;
+		};
+		const chat2 = document.getElementsByClassName("logitem")[0];
+		if (str.indexOf('India') {
+		banskip++;
+		dclick.discconect();
+		console.log("Skip reason: Banned ip");
+		return false;
+		};
 	},
 	update_stats: function () {
 		$("banstat").innerText = ips.blacklist.length;
